@@ -19,7 +19,6 @@
 }
 
 .nav-li:hover,
-.nav-li:active,
 .nav-li:focus {
   text-decoration: underline;
 }

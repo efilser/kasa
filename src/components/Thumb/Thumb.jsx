@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/Thumb.css';
+import './Thumb.css';
 
 function Thumb() {
   return (

@@ -1,17 +1,15 @@
 .accommodations {
-  border-radius: 25px;
-  background: #F6F6F6;
   width: 100%;
-  height: 829px;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  gap: 20px;
+  margin: 27px 0 27px 0;
 }
 
 .thumb {
-  width: 340px;
-  height: 340px;
+  width: 335px;
+  height: 255px;
   position: relative;
   border-radius: 10px;
   cursor: pointer;
@@ -23,7 +21,6 @@
   height: 100%;
   object-fit: cover;
   border-radius: 10px;
-  background: #FF6060;
 }
 
 .thumb-caption {
@@ -33,5 +30,40 @@
   color: white;
   position: absolute;
   bottom: 0;
-  left: -15%;
+  left: 5%;
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .accommodations {
+    border-radius: 20px;
+    background: #F6F6F6;
+    margin: 43px 0 43px 0;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px 70px;
+  }
+
+  .thumb {
+    width: 340px;
+    height: 340px;
+    flex-basis: 35%;
+  }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .accommodations {
+    border-radius: 25px;
+    margin: 50px 0 50px 0;
+    padding-top: 56px;
+    padding-bottom: 43px;
+    gap: 50px 60px;
+  }
+
+  .thumb {
+    flex-basis: 25%;
+  }
 }

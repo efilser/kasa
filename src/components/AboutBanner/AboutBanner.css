@@ -5,7 +5,6 @@ header {
   align-items: center;
   justify-content: center;
   height: 111px;
-  position: relative;
 }
 
 header img {
@@ -14,12 +13,6 @@ header img {
   object-fit: cover;
   border-radius: 10px;
   opacity: 0.7;
-}
-
-header p {
-  position: absolute;
-  color: white;
-  font-size: 24px;
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -32,10 +25,6 @@ header p {
   header img {
     border-radius: 20px;
   }
-
-  header p {
-    font-size: 36px;
-  }
 }
 
 /* X-Large devices (large desktops, 1200px and up) */
@@ -47,9 +36,5 @@ header p {
 
   header img {
     border-radius: 25px;
-  }
-
-  header p {
-    font-size: 48px;
   }
 }

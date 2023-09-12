@@ -1,33 +1,16 @@
 import React from 'react';
 import './Thumb.css';
+import accommodationsData from '../../datas/Accommodations.json';
 
 function Thumb() {
   return (
     <section className='accommodations'>
-      <figure className='thumb'>
-        <div className='thumb-img'></div>
-        <figcaption className='thumb-caption'>Titre de la location</figcaption>
-      </figure>
-      <figure className='thumb'>
-        <div className='thumb-img'></div>
-        <figcaption className='thumb-caption'>Titre de la location</figcaption>
-      </figure>
-      <figure className='thumb'>
-        <div className='thumb-img'></div>
-        <figcaption className='thumb-caption'>Titre de la location</figcaption>
-      </figure>
-      <figure className='thumb'>
-        <div className='thumb-img'></div>
-        <figcaption className='thumb-caption'>Titre de la location</figcaption>
-      </figure>
-      <figure className='thumb'>
-        <div className='thumb-img'></div>
-        <figcaption className='thumb-caption'>Titre de la location</figcaption>
-      </figure>
-      <figure className='thumb'>
-        <div className='thumb-img'></div>
-        <figcaption className='thumb-caption'>Titre de la location</figcaption>
-      </figure>
+      {accommodationsData.map((accommodation) => (
+        <div className='thumb' key={accommodation.id}>
+          <img className='thumb-img' src={accommodation.cover} alt={accommodation.description}></img>
+          <p className='thumb-caption'>{accommodation.title}</p>
+        </div>
+      ))}
     </section>
   );
 }

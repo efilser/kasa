@@ -5,9 +5,9 @@ import './Navbar.css';
 
 function Navbar() {
   return (
-    <nav className='nav'>
+    <nav>
       <img src={logo} alt="logo kasa" />
-      <ul className='nav-ul'>
+      <ul>
         <li>
           <Link className='nav-li' to={'/'}>Accueil</Link>
         </li>

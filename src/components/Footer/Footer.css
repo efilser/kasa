@@ -1,20 +1,36 @@
-.footer {
+footer {
   display: flex;
   height: 209px;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
-  gap: 28.556px;
   background: black;
   color: white;
 }
 
-.footer-logo {
+footer img {
   width: 122px;
   height: 40px;
 }
 
-.footer-text {
-  font-size: 24px;
-  font-family: 'Montserrat', sans-serif;
+footer p {
+  font-size: 12px;
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  footer p {
+    font-size: 18px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  footer {
+    justify-content: flex-end;
+  }
+
+  footer p {
+    font-size: 24px;
+  }
 }

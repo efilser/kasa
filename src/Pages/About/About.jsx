@@ -1,9 +1,11 @@
 import React from 'react';
+import './About.css';
+import AboutBanner from '../../components/AboutBanner/AboutBanner';
 
 function About() {
   return (
-    <div>
-      <h1>A propos</h1>
+    <div className='about'>
+      <AboutBanner />
     </div>
   );
 }

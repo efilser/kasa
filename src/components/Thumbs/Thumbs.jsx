@@ -1,16 +1,18 @@
 import React from 'react';
-import './Thumb.css';
+import './Thumbs.css';
 import accommodationsData from '../../datas/Accommodations.json';
 import { Link } from 'react-router-dom';
 
-function Thumb() {
+function Thumbs() {
   return (
     <section className='accommodations'>
       {accommodationsData.map((accommodation) => (
         <div className='thumb' key={accommodation.id}>
           <Link to={`/accommodations/${accommodation.id}`} className='thumb-link'>
           <img className='thumb-img' src={accommodation.cover} alt={accommodation.description}></img>
-          <p className='thumb-caption'>{accommodation.title}</p>
+          <div className='thumb-gradient'>
+            <p className='thumb-caption'>{accommodation.title}</p>
+          </div>
           </Link>
         </div>
       ))}
@@ -18,4 +20,4 @@ function Thumb() {
   );
 }
 
-export default Thumb;
+export default Thumbs;

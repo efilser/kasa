@@ -19,7 +19,7 @@ nav ul {
 .nav-li {
   color: #FF6060;
   text-decoration: none;
-  font-size: 12px;
+  font-size: 0.75rem;
 }
 
 .nav-li:hover,
@@ -43,7 +43,7 @@ nav ul {
   }
 
   .nav-li {
-    font-size: 16px;
+    font-size: 1rem;
   }
 }
 
@@ -63,6 +63,6 @@ nav ul {
   }
 
   .nav-li {
-    font-size: 24px;
+    font-size: 1.5rem;
   }
 }

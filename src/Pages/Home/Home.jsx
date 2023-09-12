@@ -1,13 +1,13 @@
 import React from 'react';
 import './Home.css';
 import Banner from '../../components/Banner/Banner';
-import Thumb from '../../components/Thumb/Thumb';
+import Thumbs from '../../components/Thumbs/Thumbs';
 
 function Home() {
   return (
     <div className='home'>
       <Banner />
-      <Thumb />
+      <Thumbs />
     </div>
   );
 }

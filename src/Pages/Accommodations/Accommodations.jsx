@@ -1,7 +1,10 @@
 import React from 'react';
 import './Accommodations.css';
-import accomodationsData from '../../datas/Accommodations.json';
 
 function Accommodations() {
-  
+  return (
+    <div></div>
+  );
 }
+
+export default Accommodations;

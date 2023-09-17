@@ -6,7 +6,9 @@ import './Navbar.css';
 function Navbar() {
   return (
     <nav>
-      <img src={logo} alt="logo kasa" />
+      <Link to={'/'}>
+        <img src={logo} alt="logo kasa" />
+      </Link>
       <ul>
         <li>
           <Link className='nav-li' to={'/'}>Accueil</Link>

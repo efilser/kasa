@@ -1,0 +1,67 @@
+.accommodation {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 27px 20px;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 15px;
+}
+
+.accommodation-gallery {
+  width: 335px;
+  height: 255px;
+}
+
+.accommodation-title {
+  font-size: 1.125rem;
+}
+
+.accommodation-location {
+  font-size: 0.875rem;
+}
+
+.accommodation-tags {
+  display: flex;
+  gap: 10px;
+}
+
+.accommodation-tag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.625rem;
+  color: white;
+  background-color: #FF6060;
+  width: 84px;
+  height: 18px;
+  border-radius: 10px;
+}
+
+.accommodation-host {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.accommodation-host-rating {
+  width: 98px;
+  height: 18px;
+}
+
+.accommodation-host-info {
+  display: flex ;
+  align-items: center;
+  gap: 10px;
+}
+
+.accommodation-host-info p {
+  font-size: 0.75rem;
+}
+
+.accommodation-host-info img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}

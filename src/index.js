@@ -11,14 +11,16 @@ import Accommodations from './Pages/Accommodations/Accommodations';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <BrowserRouter>
-    <Navbar />
-    <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/about' element={<About />} />
-        <Route path='/accommodations/:id' element={<Accommodations />} />
-        <Route path='*' element={<Error />} />
-      </Routes>
-    <Footer />
-  </BrowserRouter>
+  <React.StrictMode>
+    <BrowserRouter>
+      <Navbar />
+      <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/about' element={<About />} />
+          <Route path='/accommodations/:id' element={<Accommodations />} />
+          <Route path='*' element={<Error />} />
+        </Routes>
+      <Footer />
+    </BrowserRouter>
+  </React.StrictMode>
 );

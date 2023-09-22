@@ -10,6 +10,13 @@ function Accommodations() {
   const { id } = useParams();
 
   useEffect(() => {
+    document.title = 'Kasa - Fiche logement'; // Update the page title when the component mounts
+    return () => {
+      document.title = 'Kasa'; // Reset the page title when the component unmounts
+    };
+  }, []);
+
+  useEffect(() => {
     const accommodation = accommodationsData.find((item) => item.id === id);
     if (!accommodation) {
       navigate('/error'); // Redirect to Error page if accommodation doesn't exist

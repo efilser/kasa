@@ -1,8 +1,15 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './Error.css';
 
 function Error () {
+  useEffect(() => {
+    document.title = 'Kasa - 404'; // Update the page title when the component mounts
+    return () => {
+      document.title = 'Kasa'; // Reset the page title when the component unmounts
+    };
+  }, []);
+
   return (
     <section>
       <h1>404</h1>

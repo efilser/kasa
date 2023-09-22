@@ -79,6 +79,14 @@
   border-radius: 50%;
 }
 
+.accommodation .wrapper {
+  margin-top: 0;
+}
+
+.accommodation .collapse {
+  width: 100%;
+}
+
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   .accommodation {
@@ -127,6 +135,10 @@
     width: 48px;
     height: 48px;
   }
+
+  .accommodation .collapse-item-title {
+    border-radius: 10px;
+  }
 }
 
 /* X-Large devices (large desktops, 1200px and up) */
@@ -170,5 +182,15 @@
   .accommodation-host-info img {
     width: 64px;
     height: 64px;
+  }
+
+  .accommodation .collapse {
+    flex-direction: row;
+    justify-content: center;
+    gap: 76px;
+  }
+
+  .accommodation .collapse-item {
+    width: 100%;
   }
 }

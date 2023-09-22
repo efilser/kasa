@@ -5,7 +5,7 @@ import './Accommodations.css';
 import Collapse from '../../components/Collapse/Collapse';
 import Gallery from '../../components/Gallery/Gallery';
 
-const Accommodations = () => {
+function Accommodations() {
   const navigate = useNavigate();
   const { id } = useParams();
 
@@ -16,30 +16,41 @@ const Accommodations = () => {
     }
   }, [id, navigate]);
 
+  const accommodation = accommodationsData.find((item) => item.id === id);
+
+  if (!accommodation) {
+    return null; // Render nothing if accommodation is not found (optional)
+  }
+
+  const collapseData = [
+    { title: 'Description', content: accommodation.description },
+    { title: 'Équipements', content: accommodation.equipments.join(', ') },
+  ];
+
   return (
     <section className='accommodation'>
       <div className='accommodation-gallery'>
-        <Gallery slides={accommodationsData.find((item) => item.id === id).pictures} alt={accommodationsData.find((item) => item.id === id).description}/>
+        <Gallery slides={accommodation.pictures} alt={accommodation.description} />
       </div>
       <div className='accommodation-content'>
         <div className='accommodation-info'>
-          <h1 className='accommodation-title'>{accommodationsData.find((item) => item.id === id).title}</h1>
-          <h2 className='accommodation-location'>{accommodationsData.find((item) => item.id === id).location}</h2>
+          <h1 className='accommodation-title'>{accommodation.title}</h1>
+          <h2 className='accommodation-location'>{accommodation.location}</h2>
           <div className="accommodation-tags">
-            {accommodationsData.find((item) => item.id === id).tags.map((tag, index) => (
+            {accommodation.tags.map((tag, index) => (
               <p key={index} className="accommodation-tag">{tag}</p>
             ))}
           </div>
         </div>
         <div className="accommodation-host">
-          <div className="accommodation-host-rating">{accommodationsData.find((item) => item.id === id).rating}</div>
+          <div className="accommodation-host-rating">{accommodation.rating}</div>
           <div className="accommodation-host-info">
-            <p>{accommodationsData.find((item) => item.id === id).host.name}</p>
-            <img src={accommodationsData.find((item) => item.id === id).host.picture} alt="Hôte du logement" />
+            <p>{accommodation.host.name}</p>
+            <img src={accommodation.host.picture} alt="Hôte du logement" />
           </div>
         </div>
       </div>
-      <Collapse />
+      <Collapse data={collapseData} />
     </section>
   );
 };

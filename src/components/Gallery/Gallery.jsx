@@ -3,7 +3,7 @@ import "./Gallery.css";
 import leftArrow from "../../assets/left_arrow.svg";
 import rightArrow from "../../assets/right_arrow.svg";
 
-function Gallery({ slides }) {
+function Gallery({ slides, alt }) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const length = slides.length;
 
@@ -33,7 +33,7 @@ function Gallery({ slides }) {
             className={index === currentIndex ? "slide active" : "slide"}
           >
             {index === currentIndex && (
-              <img src={image} alt="Photo d'illustration de l'appartement" className="slide-image" />
+              <img src={image} alt={alt} className="slide-image" />
             )}
             {index === currentIndex && length > 1 && (
               <span className="slide-number">

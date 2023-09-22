@@ -11,7 +11,6 @@ const Accommodations = () => {
 
   useEffect(() => {
     const accommodation = accommodationsData.find((item) => item.id === id);
-
     if (!accommodation) {
       navigate('/error'); // Redirect to Error page if accommodation doesn't exist
     }
@@ -20,7 +19,7 @@ const Accommodations = () => {
   return (
     <section className='accommodation'>
       <div className='accommodation-gallery'>
-        <Gallery slides={accommodationsData.find((item) => item.id === id).pictures} />
+        <Gallery slides={accommodationsData.find((item) => item.id === id).pictures} alt={accommodationsData.find((item) => item.id === id).description}/>
       </div>
       <h1 className='accommodation-title'>{accommodationsData.find((item) => item.id === id).title}</h1>
       <h2 className='accommodation-location'>{accommodationsData.find((item) => item.id === id).location}</h2>

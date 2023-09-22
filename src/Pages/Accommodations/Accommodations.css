@@ -9,7 +9,7 @@
 }
 
 .accommodation-gallery {
-  width: 335px;
+  width: 100%;
   height: 255px;
 }
 
@@ -34,7 +34,7 @@
   color: white;
   background-color: #FF6060;
   width: 84px;
-  height: 18px;
+  height: 24px;
   border-radius: 10px;
 }
 
@@ -64,4 +64,85 @@
   width: 32px;
   height: 32px;
   border-radius: 50%;
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .accommodation {
+    margin: 30px 50px;
+  }
+
+  .accommodation-gallery {
+    height: 335px;
+  }
+
+  .accommodation-title {
+    font-size: 1.5rem;
+  }
+
+  .accommodation-location {
+    font-size: 1rem;
+  }
+
+  .accommodation-tag {
+    font-size: 0.75rem;
+    width: 100px;
+    height: 25px;
+  }
+
+  .accommodation-host {
+    flex-direction: column-reverse;
+  }
+
+  .accommodation-host-rating {
+    width: 147px;
+    height: 27px;
+  }
+
+  .accommodation-host-info p {
+    font-size: 1rem;
+  }
+
+  .accommodation-host-info img {
+    width: 48px;
+    height: 48px;
+  }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .accommodation {
+    margin: 50px 100px;
+  }
+
+  .accommodation-gallery {
+    height: 415px;
+  }
+
+  .accommodation-title {
+    font-size: 2.25rem;
+  }
+
+  .accommodation-location {
+    font-size: 1.125rem;
+  }
+
+  .accommodation-tag {
+    width: 115px;
+    font-size: 0.875rem;
+  }
+
+  .accommodation-host-rating {
+    width: 196px;
+    height: 36px;
+  }
+
+  .accommodation-host-info p {
+    font-size: 1.125rem;
+  }
+
+  .accommodation-host-info img {
+    width: 64px;
+    height: 64px;
+  }
 }

@@ -21,18 +21,22 @@ const Accommodations = () => {
       <div className='accommodation-gallery'>
         <Gallery slides={accommodationsData.find((item) => item.id === id).pictures} alt={accommodationsData.find((item) => item.id === id).description}/>
       </div>
-      <h1 className='accommodation-title'>{accommodationsData.find((item) => item.id === id).title}</h1>
-      <h2 className='accommodation-location'>{accommodationsData.find((item) => item.id === id).location}</h2>
-      <div className="accommodation-tags">
-        {accommodationsData.find((item) => item.id === id).tags.map((tag, index) => (
-          <p key={index} className="accommodation-tag">{tag}</p>
-        ))}
-      </div>
-      <div className="accommodation-host">
-        <div className="accommodation-host-rating">{accommodationsData.find((item) => item.id === id).rating}</div>
-        <div className="accommodation-host-info">
-          <p>{accommodationsData.find((item) => item.id === id).host.name}</p>
-          <img src={accommodationsData.find((item) => item.id === id).host.picture} alt="Hôte du logement" />
+      <div className='accommodation-content'>
+        <div className='accommodation-info'>
+          <h1 className='accommodation-title'>{accommodationsData.find((item) => item.id === id).title}</h1>
+          <h2 className='accommodation-location'>{accommodationsData.find((item) => item.id === id).location}</h2>
+          <div className="accommodation-tags">
+            {accommodationsData.find((item) => item.id === id).tags.map((tag, index) => (
+              <p key={index} className="accommodation-tag">{tag}</p>
+            ))}
+          </div>
+        </div>
+        <div className="accommodation-host">
+          <div className="accommodation-host-rating">{accommodationsData.find((item) => item.id === id).rating}</div>
+          <div className="accommodation-host-info">
+            <p>{accommodationsData.find((item) => item.id === id).host.name}</p>
+            <img src={accommodationsData.find((item) => item.id === id).host.picture} alt="Hôte du logement" />
+          </div>
         </div>
       </div>
       <Collapse />

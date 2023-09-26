@@ -56,7 +56,7 @@ function Accommodations() {
             {[...Array(5)].map((_, index) => (
               <i
                 key={index}
-                className={`fa-${index < solidStars ? 'solid' : 'regular'} fa-star`}
+                className={`fa-${index < solidStars ? 'solid' : 'solid empty'} fa-star`}
               ></i>
             ))}
           </div>

@@ -59,12 +59,19 @@
 }
 
 .accommodation-host-rating {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 98px;
   height: 18px;
 }
 
 .accommodation-host-rating .fa-star {
   font-size: 0.875rem;
+}
+
+.accommodation-host-rating .empty {
+  color: #E3E3E3;
 }
 
 .accommodation-host-info {
@@ -75,6 +82,7 @@
 
 .accommodation-host-info p {
   font-size: 0.75rem;
+  width: 77px;
 }
 
 .accommodation-host-info img {

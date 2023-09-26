@@ -23,7 +23,7 @@ function Collapse({ data }) {
               <img src={arrow} alt="arrow for the collapse element" className={expandedIndexes.includes(index) ? 'rotate' : ''} />
             </div>
             {expandedIndexes.includes(index) && (
-              <p className='collapse-item-content'>{item.content}</p>
+              <div className='collapse-item-content'>{item.content}</div>
             )}
           </div>
         ))}

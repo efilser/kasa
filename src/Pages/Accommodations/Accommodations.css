@@ -1,0 +1,218 @@
+.accommodation {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 27px 20px;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 15px;
+}
+
+.accommodation-gallery {
+  width: 100%;
+  height: 255px;
+}
+
+.accommodation-content {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.accommodation-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.accommodation-title {
+  font-size: 1.125rem;
+}
+
+.accommodation-location {
+  font-size: 0.875rem;
+}
+
+.accommodation-tags {
+  display: flex;
+  gap: 10px;
+}
+
+.accommodation-tag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.625rem;
+  color: white;
+  background-color: #FF6060;
+  width: 85px;
+  height: 25px;
+  border-radius: 10px;
+}
+
+.accommodation-host {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.accommodation-host-rating {
+  width: 98px;
+  height: 18px;
+}
+
+.accommodation-host-rating .fa-star {
+  font-size: 0.875rem;
+}
+
+.accommodation-host-info {
+  display: flex ;
+  align-items: center;
+  gap: 10px;
+}
+
+.accommodation-host-info p {
+  font-size: 0.75rem;
+}
+
+.accommodation-host-info img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.accommodation .wrapper {
+  margin-top: 0;
+}
+
+.accommodation .collapse {
+  width: 100%;
+}
+
+.accommodation .collapse-item-content p {
+  text-align: left;
+  font-size: 0.75rem;
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .accommodation {
+    margin: 30px 50px;
+    gap: 22px;
+  }
+
+  .accommodation-gallery {
+    height: 335px;
+  }
+
+  .accommodation-content {
+    gap: 15px;
+    flex-direction: row;
+  }
+
+  .accommodation-title {
+    font-size: 1.5rem;
+  }
+
+  .accommodation-location {
+    font-size: 1rem;
+  }
+
+  .accommodation-tag {
+    font-size: 0.75rem;
+    width: 100px;
+    height: 30px;
+  }
+
+  .accommodation-host {
+    flex-direction: column-reverse;
+    align-items: flex-end;
+  }
+
+  .accommodation-host-rating {
+    width: 147px;
+    height: 27px;
+  }
+
+  .accommodation-host-rating .fa-star {
+    font-size: 1.188rem;
+  }
+
+  .accommodation-host-info p {
+    font-size: 1rem;
+  }
+
+  .accommodation-host-info img {
+    width: 48px;
+    height: 48px;
+  }
+
+  .accommodation .collapse-item-title {
+    border-radius: 10px;
+  }
+
+  .accommodation .collapse-item-content p {
+    font-size: 1.125rem;
+  }
+  
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .accommodation {
+    margin: 50px 100px;
+    gap: 30px;
+  }
+
+  .accommodation-gallery {
+    height: 415px;
+  }
+
+  .accommodation-content {
+    gap: 20px;
+  }
+
+  .accommodation-title {
+    font-size: 2.25rem;
+  }
+
+  .accommodation-location {
+    font-size: 1.125rem;
+  }
+
+  .accommodation-tag {
+    width: 115px;
+    height: 35px;
+    font-size: 0.875rem;
+  }
+
+  .accommodation-host-rating {
+    width: 196px;
+    height: 36px;
+  }
+
+  .accommodation-host-rating .fa-star {
+    font-size: 1.5rem;
+  }
+
+  .accommodation-host-info p {
+    font-size: 1.125rem;
+  }
+
+  .accommodation-host-info img {
+    width: 64px;
+    height: 64px;
+  }
+
+  .accommodation .collapse {
+    flex-direction: row;
+    justify-content: center;
+    gap: 76px;
+  }
+
+  .accommodation .collapse-item {
+    width: 100%;
+  }
+}

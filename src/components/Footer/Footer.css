@@ -1,0 +1,32 @@
+footer {
+  display: flex;
+  height: 209px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: black;
+  color: white;
+}
+
+footer img {
+  width: 122px;
+  height: 40px;
+}
+
+footer p {
+  font-size: 0.75rem;
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  footer p {
+    font-size: 1.125rem;
+  }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  footer p {
+    font-size: 1.5rem;
+  }
+}

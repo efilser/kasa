@@ -1,0 +1,68 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px;
+}
+
+nav img {
+  width: 145px;
+  height: 46px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 26px;
+}
+
+.nav-li {
+  color: #FF6060;
+  text-decoration: none;
+  font-size: 0.75rem;
+}
+
+.nav-li:hover,
+.nav-li:focus {
+  text-decoration: underline;
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  nav {
+    margin: 30px 50px;
+  }
+
+  nav img {
+    width: 175px;
+    height: 57px;
+  }
+
+  nav ul {
+    gap: 45px;
+  }
+
+  .nav-li {
+    font-size: 1rem;
+  }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  nav {
+    margin: 45px 100px;
+  }
+
+  nav img {
+    width: 210px;
+    height: 68px;
+  }
+
+  nav ul {
+    gap: 57px;
+  }
+
+  .nav-li {
+    font-size: 1.5rem;
+  }
+}

@@ -1,0 +1,17 @@
+.about {
+  margin: 20px;
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .about {
+    margin: 30px 50px;
+  }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .about {
+    margin: 45px 100px;
+  }
+}

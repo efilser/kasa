@@ -31,7 +31,7 @@ function Accommodations() {
 
   const collapseData = [
     { title: 'Description', content: accommodation.description },
-    { title: 'Équipements', content: accommodation.equipments.join(', ') },
+    { title: 'Équipements', content: accommodation.equipments.map((equipment) => <p key={equipment}>{equipment}</p>) },
   ];
 
   const solidStars = accommodation.rating;

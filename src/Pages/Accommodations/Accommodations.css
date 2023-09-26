@@ -91,6 +91,11 @@
   width: 100%;
 }
 
+.accommodation .collapse-item-content p {
+  text-align: left;
+  font-size: 0.75rem;
+}
+
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   .accommodation {
@@ -147,6 +152,11 @@
   .accommodation .collapse-item-title {
     border-radius: 10px;
   }
+
+  .accommodation .collapse-item-content p {
+    font-size: 1.125rem;
+  }
+  
 }
 
 /* X-Large devices (large desktops, 1200px and up) */

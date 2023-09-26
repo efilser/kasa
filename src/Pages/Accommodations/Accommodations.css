@@ -63,6 +63,10 @@
   height: 18px;
 }
 
+.accommodation-host-rating .fa-star {
+  font-size: 0.875rem;
+}
+
 .accommodation-host-info {
   display: flex ;
   align-items: center;
@@ -127,6 +131,10 @@
     height: 27px;
   }
 
+  .accommodation-host-rating .fa-star {
+    font-size: 1.188rem;
+  }
+
   .accommodation-host-info p {
     font-size: 1rem;
   }
@@ -173,6 +181,10 @@
   .accommodation-host-rating {
     width: 196px;
     height: 36px;
+  }
+
+  .accommodation-host-rating .fa-star {
+    font-size: 1.5rem;
   }
 
   .accommodation-host-info p {

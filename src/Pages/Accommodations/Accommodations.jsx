@@ -34,6 +34,8 @@ function Accommodations() {
     { title: 'Équipements', content: accommodation.equipments.join(', ') },
   ];
 
+  const solidStars = accommodation.rating;
+
   return (
     <section className='accommodation'>
       <div className='accommodation-gallery'>
@@ -50,7 +52,14 @@ function Accommodations() {
           </div>
         </div>
         <div className="accommodation-host">
-          <div className="accommodation-host-rating">{accommodation.rating}</div>
+          <div className="accommodation-host-rating">
+            {[...Array(5)].map((_, index) => (
+              <i
+                key={index}
+                className={`fa-${index < solidStars ? 'solid' : 'regular'} fa-star`}
+              ></i>
+            ))}
+          </div>
           <div className="accommodation-host-info">
             <p>{accommodation.host.name}</p>
             <img src={accommodation.host.picture} alt="Hôte du logement" />

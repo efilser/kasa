@@ -44,7 +44,7 @@ function Accommodations() {
       <div className='accommodation-content'>
         <div className='accommodation-info'>
           <h1 className='accommodation-title'>{accommodation.title}</h1>
-          <h2 className='accommodation-location'>{accommodation.location}</h2>
+          <h3 className='accommodation-location'>{accommodation.location}</h3>
           <div className="accommodation-tags">
             {accommodation.tags.map((tag, index) => (
               <p key={index} className="accommodation-tag">{tag}</p>
@@ -56,7 +56,7 @@ function Accommodations() {
             {[...Array(5)].map((_, index) => (
               <i
                 key={index}
-                className={`fa-${index < solidStars ? 'solid' : 'regular'} fa-star`}
+                className={`fa-${index < solidStars ? 'solid' : 'solid empty'} fa-star`}
               ></i>
             ))}
           </div>

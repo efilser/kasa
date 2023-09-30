@@ -1,12 +1,24 @@
 @keyframes content-appear {
   0%{
     opacity: 0;
-    transform: translateY(-300px);
+    transform: translateY(-94px);
   }
 
   100%{
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@keyframes content-disappear {
+  0%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  100%{
+    opacity: 0;
+    transform: translateY(-94px);
   }
 }
 
@@ -29,7 +41,7 @@
 
 .collapse-item {
   color: #FF6060;
-  border-radius: 5px;
+  cursor: pointer;
 }
 
 .collapse-item-title {
@@ -42,6 +54,8 @@
   height: 10px;
   padding: 10px;
   border-radius: 5px;
+  position: relative;
+  z-index: 1;
 }
 
 .collapse-item-title img {
@@ -60,6 +74,9 @@
   padding: 20px;
   text-align: left  ;
   background-color: #F6F6F6;
+  border-radius: 5px;
+  position: relative;
+  top: -5px;
 }
 
 /* Medium devices (tablets, 768px and up) */

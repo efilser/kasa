@@ -8,11 +8,10 @@
 }
 
 .thumb {
-  width: 335px;
+  width: 100%;
   height: 255px;
   position: relative;
   border-radius: 10px;
-  cursor: pointer;
 }
 
 .thumb-img {
@@ -34,12 +33,12 @@
 
 .thumb-caption {
   font-size: 1.125rem;
-  height: 52px;
   text-align: left;
   color: white;
   position: absolute;
   bottom: 0;
-  left: 5%;
+  left: 0;
+  padding: 20px;
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -52,13 +51,12 @@
     padding-bottom: 25px;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 30px 70px;
+    gap: 30px 40px;
   }
 
   .thumb {
-    width: 340px;
     height: 340px;
-    flex-basis: 35%;
+    flex-basis: 40%;
   }
 }
 
@@ -73,6 +71,6 @@
   }
 
   .thumb {
-    flex-basis: 25%;
+    flex-basis: 26%;
   }
 }

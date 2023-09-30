@@ -6,6 +6,7 @@ footer {
   align-items: center;
   background: black;
   color: white;
+  gap: 7px;
 }
 
 footer img {
@@ -15,17 +16,27 @@ footer img {
 
 footer p {
   font-size: 0.75rem;
+  width: 122px;
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+  footer {
+    gap: 14px;
+  }
+
   footer p {
     font-size: 1.125rem;
+    width: 100%;
   }
 }
 
 /* X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+  footer {
+    gap: 28px;
+  }
+
   footer p {
     font-size: 1.5rem;
   }

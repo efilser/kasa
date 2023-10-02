@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import './Home.css';
 import Banner from '../../components/Banner/Banner';
 import Thumbs from '../../components/Thumbs/Thumbs';
+import banner from '../../assets/banner.png';
 
 function Home() {
   useEffect(() => {
@@ -13,7 +14,11 @@ function Home() {
 
   return (
     <div className='home'>
-      <Banner />
+      <Banner
+        bannerSrc={banner}
+        altText="bannière de l'accueil"
+        text="Chez vous, partout et ailleurs"
+      />
       <Thumbs />
     </div>
   );

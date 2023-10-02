@@ -1,8 +1,9 @@
 import React, { useEffect } from 'react';
 import './About.css';
-import AboutBanner from '../../components/AboutBanner/AboutBanner';
+import Banner from '../../components/Banner/Banner';
 import Collapse from '../../components/Collapse/Collapse';
 import aboutData from '../../datas/About.json';
+import aboutBanner from '../../assets/about_banner.png';
 
 function About() {
   useEffect(() => {
@@ -14,7 +15,10 @@ function About() {
 
   return (
     <div className='about'>
-      <AboutBanner />
+      <Banner
+        bannerSrc={aboutBanner}
+        altText="bannière de la page à propos"
+      />
       <Collapse data={aboutData}/>
     </div>
   );

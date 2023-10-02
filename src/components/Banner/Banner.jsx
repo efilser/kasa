@@ -1,12 +1,11 @@
 import React from 'react';
-import banner from '../../assets/banner.png';
 import './Banner.css';
 
-function Banner() {
+function Banner({ bannerSrc, altText, text }) {
   return (
     <header>
-      <img src={banner} alt="bannière de l'accueil" />
-      <p>Chez vous, partout et ailleurs</p>
+      <img src={bannerSrc} alt={altText} />
+      {text && <p>{text}</p>}
     </header>
   );
 }
